@@ -5,6 +5,7 @@ from tensorflow import keras
 import matplotlib.pyplot as plt
 
 
+# defining functions for LR
 def regression(intercept, slope, features):
     """
     Performs a simple linear regression algorithm
