@@ -1,5 +1,5 @@
 Score predictor algorithm using supervised machine learning
-Data has only one feature (hours studied) that would determine the function model
+Data has only one feature (hours studied) that would determine the function model i.e. score
 Model trained using tensorflow and keras optimizers
-Program prompts the user to enter number of hours and return the predicted score
-Plots the optimized function along with the dataset
+Program prompts the user to enter number of hours and returns the predicted score
+Plots the optimized function along with the data points to visualize accuracy
