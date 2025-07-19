@@ -1,6 +1,82 @@
-Score predictor algorithm using supervised machine learning
-Data has only one feature (hours studied) that would determine the function model i.e. score
-Model trained using tensorflow and keras optimizers
-Program prompts the user to enter number of hours and returns the predicted score
-Plots the optimized function along with the data points to visualize accuracy
-The repo contains two files, one contains just the source code and the other is a notebook
+# 🎯 Student Score Predictor using TensorFlow
+
+This project demonstrates a simple **supervised machine learning model**
+built using **TensorFlow and Keras** to predict student scores based on
+hours studied. It applies **linear regression** from scratch using
+low-level TensorFlow APIs, making it both educational and customizable.
+
+---
+
+## 📁 Project Structure
+
+```
+📁 Score Predictor (Supervised ML).ipynb – Jupyter notebook walkthrough  
+📁 score_predictor.py                   – Standalone script with CLI input  
+📁 README.md                            – Overview and usage instructions  
+```
+
+---
+
+## 🧠 Project Overview
+
+- Uses one feature: **Hours Studied**
+- Trains a **linear regression model** to predict **Student Score**
+- Implements cost function and training loop manually using TensorFlow
+- Prompts user input for prediction
+- Visualizes learned regression line over data
+
+---
+
+## 🔧 Installation
+
+Install dependencies using:
+
+```bash
+pip install numpy pandas matplotlib tensorflow
+```
+
+---
+
+## 🚀 Run the Script
+
+1. Update the dataset path in `score_predictor.py`:
+   ```python
+   student_data = pd.read_csv("path/to/student_scores.csv")
+   ```
+
+2. Run the script and follow the prompt:
+   ```bash
+   python score_predictor.py
+   ```
+
+3. Enter the number of hours studied (e.g., `5.5`) when prompted.
+
+---
+
+## 🔢 Example Output
+
+```
+Enter number of hours studied to predict the student score: 6
+The student is predicted to score 61.8 by studying 6.0 hours
+```
+
+A plot will also be shown with:
+- Scatter of actual data
+- Learned regression line showing predicted scores
+
+---
+
+## 📊 Dataset
+
+The dataset contains 25 records with:
+- `Hours` (float): Number of hours studied
+- `Scores` (float): Marks scored by the student
+
+Source: [The Sparks Foundation – Task 1](https://www.thesparksfoundationsingapore.org/)
+
+---
+
+## 🔖 Tags
+
+`#LinearRegression` `#TensorFlow` `#SupervisedLearning` `#StudentScorePrediction`  
+`#Keras` `#EducationalML` `#DataScience` `#RegressionModel`
