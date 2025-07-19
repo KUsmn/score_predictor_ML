@@ -28,7 +28,7 @@ def cost_function(intercept, slope, features, target):
     return loss
 
 
-student_data = pd.read_csv(r"D:\Usman\Data Science\The Sparks Foundation\Task 1\student_scores.csv")
+student_data = pd.read_csv(r"D:\Usman\Data Science\student_scores.csv")
 # converting data into a numpy array
 hours = np.asarray(student_data['Hours'])
 scores = np.asarray(student_data['Scores'])
